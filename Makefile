@@ -15,7 +15,7 @@ EXECUTABLE=decoder
 all: $(EXECUTABLE)
 
 $(EXECUTABLE): main.o libcrypto.so
-	$(CC) $(LDPATH) $^ -o $(EXECUTABLE)
+	$(CC) $(LDPATH) $^ -o $@
 
 #Receipe for main.cpp
 main.o: main.cpp
